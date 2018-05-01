@@ -1,0 +1,3 @@
+defaultscreens() {
+defaults write com.apple.screencapture location $1
+}
