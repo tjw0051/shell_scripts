@@ -21,6 +21,21 @@ elif [ "$1" = "6" ]; then
 	select-pane -t 0 \; \
 	split-window -v \; \
 	select-pane -t 0 \;
-
+elif [ "$1" = "9" ]; then
+	tmux new-session \; \
+	split-window -h \; \
+	split-window -h \; \
+	split-window -v \; \
+	split-window -v \; \
+	select-pane -t 1 \; \
+	split-window -v \; \
+	split-window -v \; \
+	select-pane -t 0 \; \
+	split-window -v \; \
+	split-window -v \; \
+	select-layout tiled \; \
+	select-pane -t 0 \;
+else
+	echo "Unrecognised grid format."
 fi
 }
