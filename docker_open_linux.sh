@@ -1,4 +1,4 @@
 # Open folder in ubuntu using docker
 openlinux() {
-docker run -v $0:/working -it --rm ubuntu
+docker run -v $1:/working -it --rm ubuntu
 }
